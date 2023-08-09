@@ -1,0 +1,18 @@
+* ~ns-keychain.el~
+Simple emacs package that integrates macOS's ~security~ command into emacs; this way, you can store passwords for services like email (with ~gnus~ or similar) or even API keys for [[https://github.com/emacs-openai/chatgpt][ChatGPT]].
+
+** Install
+#+begin_src emacs-lisp
+  (use-package ns-keychain
+    :straight (:host github :repo "yaqubroli/ns-keychain.el"))
+#+end_src
+** Functions
+
+|-----------------------------+------------------------------------------------------------------------------------------------------------------|
+| Function Name               | Description                                                                                                      |
+|-----------------------------+------------------------------------------------------------------------------------------------------------------|
+| ns-keychain-add-generic-password  | Add a generic password to macOS's OS-wide keychain. SERVICE and ACCOUNT are strings. PASSWORD is a string or nil. |
+| ns-keychain-add-internet-password | Add an internet password to macOS's OS-wide keychain. SERVER and ACCOUNT are strings. PASSWORD is a string or nil.|
+| ns-keychain-get-generic-password  | Get the password for SERVICE and ACCOUNT from macOS's OS-wide keychain.                                          |
+| ns-keychain-get-internet-password | Get the password for SERVER and ACCOUNT from macOS's OS-wide keychain.                                           |
+|-----------------------------+------------------------------------------------------------------------------------------------------------------|
