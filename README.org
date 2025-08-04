@@ -1,3 +1,6 @@
+moved to personal git server
+---
+
 * ~ns-keychain.el~
 Simple emacs package that integrates macOS's ~security~ command into emacs; this way, you can store passwords for services like email (with ~gnus~ or similar) or even API keys for [[https://github.com/emacs-openai/chatgpt][ChatGPT]].
 
